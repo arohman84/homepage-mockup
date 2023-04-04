@@ -123,12 +123,12 @@ export default function Home({ data, banners }) {
 export async function getServerSideProps() {
   // Fetch data from external API
   const res = await fetch(
-    `${process.env.ENDPOINT}/graphql/execute.json/axisnet/getAllPackages`
+    `https://publish-p24773-e1010008.adobeaemcloud.com/graphql/execute.json/axisnet/getAllPackages`
   );
   const { data } = await res.json();
 
   const banner = await fetch(
-    `${process.env.ENDPOINT}/graphql/execute.json/axisnet/getAllBanners`
+    `https://publish-p24773-e1010008.adobeaemcloud.com/graphql/execute.json/axisnet/getAllBanners`
   );
   const { data: getBanner } = await banner.json();
 
