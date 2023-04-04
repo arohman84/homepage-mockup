@@ -1,7 +1,7 @@
 // libs
 import Cors from "cors";
 // utils
-import { initMiddleware } from "@helpers";
+import { initMiddleware } from "@/utils/helpers";
 
 // Initialize the cors middleware
 const cors = initMiddleware(
